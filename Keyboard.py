@@ -41,7 +41,7 @@ def setupType(type_):
 def toSQL():
     print("tosql")
     
-    #engine =create_engine('mysql+pymysql://root:1qaz2wsx@35.201.175.100:3306/LIVINGLAB?charset=utf8', encoding='utf-8', max_overflow=5)
+    engine =create_engine('mysql+pymysql://root:password@ip:3306/LIVINGLAB?charset=utf8', encoding='utf-8', max_overflow=5)
     
     df_.to_sql('customer_type', engine, if_exists='append')
     print(df_)
